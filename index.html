@@ -27,18 +27,18 @@
         <!-- navber -->
         <nav class="flex justify-between items-center bg-slate-100 p-2 rounded-2xl">
             <!-- left-side -->
-           <div class="flex items-center">
+           <div class="flex items-center space-x-1">
              <img class="w-8 h-8" src="assets/logo.png" alt="">
              <p>Dev<span class="font-bold">Board</span></p>
            </div>
              <!-- right child -->
            <div class="flex items-center ">
-              <div class="flex mr-12 gap-x-2 py-2 px-4 bg-purple-100 rounded-3xl">
+              <div class="flex mr-2 md:mr-12 gap-x-2 py-2 px-4 bg-purple-100 rounded-3xl">
                 <img class="w-6 h-6" src="assets/checkbox.png" alt="">
                 <p id="plus" class="font-bold">23</p>
               </div>
               <div class="w-12 h-12 flex items-center justify-center bg-purple-200 rounded-full">
-                <img class="w-9 h-9" src="assets/theme-btn.png" alt="">
+                <img id="them-btn" class="w-9 h-9" src="assets/theme-btn.png" alt="">
               </div>
            </div>
         </nav>
@@ -48,13 +48,13 @@
             <!-- top child -->
             <div class="flex lg:flex-row lg:justify-center lg:items-center gap-3 pb-3 border-b-2 border-dashed">
               <!-- one -->
-               <div class="w-1/4 flex bg-purple-100 p-2 rounded-xl gap-x-5">
+               <div class="w-1/4 lg:flex bg-purple-100 p-2 rounded-xl gap-x-5">
                 <div class="w-12 h-12 bg-slate-100 flex justify-center items-center rounded-full">
                   <img class="w-6 h-6" src="assets/checkbox.png" alt="">
                 </div>
                 <div>
                   <p>task assigned</p>
-                  <h3 class="text-2xl font-bold">0<span id="minus-num">5</span></h3>
+                  <h3 class="text-2xl font-bold">0<span id="minus">6</span></h3>
                 </div>
                </div>
                <!-- tow -->
@@ -70,13 +70,12 @@
                   <img class="w-6 h-6" src="assets/calender.png" alt="">
                 </div>
                 <div>
-                  <p>Wed,</p>
-                  <h3 class="text-base font-bold">jul 28 2025</h3>
+                  <h3 id="currentDate" class="text-base font-bold"></h3>
                 </div>
                </div>
             </div>
             <!-- bottom child -->
-             <div class="grid grid-cols-2 lg:grid-cols-3 pt-3 gap-4">
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-3 gap-4">
               <!-- one -->
               <div class="bg-purple-100  py-5 px-3 rounded-md space-y-2">
                 <a class="text-xs text-gray-500 p-1 bg-white rounded-xl" href="">ShopEase</a>
@@ -186,5 +185,6 @@
     </section>
     <script src="alljs/hitory.js"></script>
     <script src="alljs/events.js"></script>
+    <script src="alljs/test.js"></script>
 </body>
 </html>

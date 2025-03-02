@@ -28,7 +28,7 @@
         <!-- navber -->
         <nav class="flex justify-between items-center bg-slate-100 p-4 rounded-2xl">
             <!-- left-side -->
-           <div class="flex items-center">
+           <div class="flex items-center space-x-1">
              <img class="w-8 h-8" src="assets/logo.png" alt="">
              <p>Dev<span class="font-bold">Board</span></p>
            </div>
@@ -40,20 +40,28 @@
 
         <main class="space-y-4">
             <h1 class="text-2xl font-bold text-black text-center mt-3">Blogs</h1>
-        <!-- Question-1     -->
+        <!-- Question-1    class="pt-3 -->
         <div class="bg-slate-100 p-3 rounded-2xl">
             <h1 class="text-xl font-bold text-black pb-3 border-b-2 border-dashed">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima aperiam et qui adipisci fugit. Vero explicabo non iure illum.</p>
+            <p>there are five ways to select an element in the DOM.</p>
+            <ol>
+              <li>document.getElementsByTagName.</li>
+              <li>document.getElementById.</li>
+              <li>document.getElementsByClassName.</li>
+              <li>document.querySelector.</li>
+              <li>document.querySelectorAll.</li>
+            </ol>
         </div>
         <!-- Question-2    -->
         <div class="bg-slate-100 p-3 rounded-2xl">
             <h1 class="text-xl font-bold text-black pb-3 border-b-2 border-dashed">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima aperiam et qui adipisci fugit. Vero explicabo non iure illum.</p>
+            <p class="pt-3">by innerHTML we can set or change an element with tag. <br>
+            by innerText we can set or get what is in tags like text, but we can not get text with tags.</p>
         </div>
         <!-- Question-3     -->
         <div class="bg-slate-100 p-3 rounded-2xl">
             <h1 class="text-xl font-bold text-black pb-3 border-b-2 border-dashed">Question-3: What is event delegation in the DOM?</h1>
-            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima aperiam et qui adipisci fugit. Vero explicabo non iure illum.</p>
+            <p class="pt-3">set events on parant of nodeList, or parant of the target element.</p>
         </div>
         <!-- Question-4     -->
         <div class="bg-slate-100 p-3 rounded-2xl">
@@ -63,7 +71,7 @@
         <!-- Question-5     -->
         <div class="bg-slate-100 p-3 rounded-2xl">
             <h1 class="text-xl font-bold text-black pb-3 border-b-2 border-dashed">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-            <p class="pt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus minima aperiam et qui adipisci fugit. Vero explicabo non iure illum.</p>
+            <p class="pt-3">we can <br> create element by "document.createElement("")" <br>add element by ".appendChild()" <br>remove element by "element name.remove()" <br> in JavaScript</p>
         </div>
            
         </main>
