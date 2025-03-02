@@ -3,21 +3,17 @@
 const allBtn = document.querySelectorAll(".completed-btn")
 for (let btn of allBtn){
     btn.addEventListener('click',function(){
-
        let plus  = document.getElementById('plus').innerText;
        let convertedPlus = parseInt(plus)
        let minus = document.getElementById('minus').innerText;
        let convertedMinus = parseInt(minus)
-       convertedPlus++;
-       convertedMinus--;
-       plus.innerText = convertedPlus++
-       minus.innerText = convertedMinus--;
-
+         convertedPlus++;
+         convertedMinus--;
+        document.getElementById('plus').innerText = convertedPlus++;
+        document.getElementById('minus').innerText = convertedMinus--;
         btn.setAttribute('disabled','true');
         btn.style.opacity = "0.3"
-        if(btn.lendth<6){
-            return alert('Board updated Successfully');
-        }
+        return alert('Board updated Successfully');       
     })
 }
 
