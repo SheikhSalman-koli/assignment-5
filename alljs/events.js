@@ -1,8 +1,9 @@
 
-
+let count = 0 ;
 const allBtn = document.querySelectorAll(".completed-btn")
 for (let btn of allBtn){
     btn.addEventListener('click',function(){
+        count++;
        let plus  = document.getElementById('plus').innerText;
        let convertedPlus = parseInt(plus)
        let minus = document.getElementById('minus').innerText;
@@ -13,7 +14,11 @@ for (let btn of allBtn){
         document.getElementById('minus').innerText = convertedMinus--;
         btn.setAttribute('disabled','true');
         btn.style.opacity = "0.3"
-        return alert('Board updated Successfully');       
+        if(count < 6){
+            return alert('Board updated Successfully');       
+        } else {
+            return alert('wow! congratulation, you have completed all of tasks')
+        }
     })
 }
 
